@@ -63,6 +63,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Sticky Nav Glassmorphism on Scroll ---
+    const nav = document.querySelector('.sticky-nav');
+    if (nav) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    }
+
     // --- Smooth Scrolling for Anchor Links ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
