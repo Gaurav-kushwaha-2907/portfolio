@@ -318,6 +318,20 @@ section {
     font-weight: 500;
 }
 
+.availability-badge {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: #6B7280;
+}
+
+[data-theme="dark"] .availability-badge {
+    color: #9CA3AF;
+}
+
 .hero-cta {
     display: flex;
     flex-wrap: wrap;
@@ -709,6 +723,37 @@ section {
     color: #6b7280;
     padding: 2px 8px;
     border-radius: 4px;
+}
+
+/* ── Dark mode: Case Study card text fixes ── */
+
+/* Card background - ensure it's distinct from page background */
+[data-theme="dark"] .project-card {
+    background: #1E2130;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Card title */
+[data-theme="dark"] .project-card h3 {
+    color: #F9FAFB;
+}
+
+/* Card description / intro text */
+[data-theme="dark"] .project-card p,
+[data-theme="dark"] .project-card .detail-item {
+    color: #D1D5DB;
+}
+
+/* "Tactics:" and "Outcome:" labels */
+[data-theme="dark"] .project-card strong {
+    color: #E5E7EB;
+}
+
+/* Tag pills (Ahrefs, GA4, n8n etc.) */
+[data-theme="dark"] .project-card .project-tools span {
+    background-color: #2D3148;
+    color: #A5B4FC;
+    border: 1px solid rgba(165, 180, 252, 0.2);
 }
 
 /* Education */
