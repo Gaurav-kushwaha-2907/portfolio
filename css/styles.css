@@ -1118,3 +1118,23 @@ section {
         transform: scale(1)
     }
 }
+
+.footer-plain-resume {
+  color: inherit;
+  opacity: 0.45;
+  text-decoration: none;
+  font-size: 0.78rem;
+  transition: opacity 0.2s;
+}
+
+.footer-plain-resume:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+/* Dark mode */
+[data-theme="dark"] .footer-plain-resume,
+.dark .footer-plain-resume {
+  color: inherit;
+  opacity: 0.4;
+}
